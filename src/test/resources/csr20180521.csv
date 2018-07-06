@@ -1,0 +1,3 @@
+HouseholdId,StatusElectric,ElectricSensorID,PostalCode,Latitude,Longitude
+ABC-household,LIVE,ABC-sensor,PCode,0,0
+DEF-household,LIVE,DEF-sensor,PCode,0,0
