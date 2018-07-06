@@ -4,11 +4,11 @@ import org.scalatest._
 import com.holdenkarau.spark.testing.SharedSparkContext
 
 class SparkSerializationSpec
-    extends WordSpec
+    extends FreeSpec
     with Matchers
     with SharedSparkContext {
   lazy val testRdd = sc.parallelize(List(1, 2, 3))
-  "Some spark serialization examples" should {
+  "Some spark serialization examples" - {
     "Example 1 - basic spark map" in {
       object Example {
         def myFunc = testRdd.map(_ + 1).collect.toList shouldBe List(2, 3, 4)
