@@ -2,7 +2,8 @@
 
 ## What is this for?
 This repo intends to give some examples that help explain how object serialization works in Scala and Spark,
-and in particular why you may come across serialization errors when writing Spark code.
+and in particular why you may come across serialization errors when writing Spark code. There is a [related blog
+post here](https://medium.com/onzo-tech/serialization-challenges-with-spark-and-scala-a2287cd51c54)
 
 ## Why is serialization important?
 When Java/Scala objects are sent across the network they first need to be Serialized. With Spark's
